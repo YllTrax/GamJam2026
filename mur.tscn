@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://4fvr2w5fwiqk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aluq5"]
+size = Vector2(245, 16)
+
+[node name="Mur" type="Node2D" unique_id=721560299]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=727732483]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1699737854]
+shape = SubResource("RectangleShape2D_aluq5")
+
+[node name="Polygon2D" type="Polygon2D" parent="Area2D" unique_id=952582706]
+polygon = PackedVector2Array(-120, -8, -120, 8, 120, 8, 120, -8)

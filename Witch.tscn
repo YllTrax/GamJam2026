@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cyiir4w257weq"]
+
+[ext_resource type="Script" uid="uid://bg03xohsnp3o5" path="res://WitchBody.cs" id="1_lf1iu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aluq5"]
+size = Vector2(64, 64)
+
+[node name="Witch" type="Node2D" unique_id=292606763]
+
+[node name="witchBody" type="Area2D" parent="." unique_id=1812383575]
+script = ExtResource("1_lf1iu")
+
+[node name="witchCollider" type="CollisionShape2D" parent="witchBody" unique_id=1709180802]
+shape = SubResource("RectangleShape2D_aluq5")
+
+[node name="Polygon2D" type="Polygon2D" parent="witchBody" unique_id=200197227]
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
