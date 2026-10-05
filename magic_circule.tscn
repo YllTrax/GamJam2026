@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b75q5v00f0v54"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_aluq5"]
+radius = 174.07182
+
+[node name="MagicCircule" type="Node2D" unique_id=668809991]
+
+[node name="CircleArea" type="Area2D" parent="." unique_id=336263417]
+
+[node name="CollisionCircle" type="CollisionShape2D" parent="CircleArea" unique_id=821311172]
+shape = SubResource("CircleShape2D_aluq5")
+
+[node name="PolygonCircule" type="Polygon2D" parent="CircleArea" unique_id=1209311264]
+color = Color(1, 1, 1, 0.27058825)
+polygon = PackedVector2Array(-144, -96, -120, -120, -104, -136, -80, -152, -48, -168, 0, -176, 48, -168, 80, -152, 120, -128, 152, -88, 168, -48, 176, 0, 168, 48, 152, 88, 120, 128, 88, 152, 48, 168, 0, 176, -48, 168, -88, 152, -128, 120, -152, 88, -168, 48, -176, 0, -168, -48)
