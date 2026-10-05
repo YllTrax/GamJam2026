@@ -4,39 +4,93 @@
 [ext_resource type="PackedScene" uid="uid://do15h41qr01vx" path="res://Pumpkin.tscn" id="2_wkftn"]
 [ext_resource type="PackedScene" uid="uid://cyiir4w257weq" path="res://Witch.tscn" id="3_q4iis"]
 [ext_resource type="PackedScene" uid="uid://4fvr2w5fwiqk" path="res://mur.tscn" id="4_wkftn"]
+[ext_resource type="PackedScene" uid="uid://b75q5v00f0v54" path="res://magic_circule.tscn" id="5_q4iis"]
+[ext_resource type="PackedScene" uid="uid://cimj1owfoqhlt" path="res://salt.tscn" id="6_m3clv"]
+[ext_resource type="PackedScene" uid="uid://b5srfc0cj8p3k" path="res://door.tscn" id="7_mxnmf"]
 
 [node name="Level" type="Node2D" unique_id=986547127]
 script = ExtResource("1_2nifc")
 
 [node name="Pumpkin" parent="." unique_id=65623466 node_paths=PackedStringArray("Cible") instance=ExtResource("2_wkftn")]
-position = Vector2(72, 348)
+position = Vector2(1291, 334)
 Cible = NodePath("../Witch")
 
 [node name="Witch" parent="." unique_id=292606763 instance=ExtResource("3_q4iis")]
-position = Vector2(798, 242)
-
-[node name="Mur" parent="." unique_id=721560299 instance=ExtResource("4_wkftn")]
-position = Vector2(799, 139)
-
-[node name="Mur3" parent="Mur" unique_id=512088439 instance=ExtResource("4_wkftn")]
-position = Vector2(4, 264)
-
-[node name="Mur2" parent="Mur" unique_id=270104948 instance=ExtResource("4_wkftn")]
-position = Vector2(-346, 262)
-
-[node name="Mur" parent="Mur" unique_id=1614026292 instance=ExtResource("4_wkftn")]
-position = Vector2(-346, 0)
+position = Vector2(580, 319)
 
 [node name="Mur4" parent="." unique_id=2028347211 instance=ExtResource("4_wkftn")]
-position = Vector2(325, 360.99997)
+position = Vector2(394, 405)
 rotation = 1.5707964
 scale = Vector2(0.4, 1)
 
-[node name="Mur7" parent="Mur4" unique_id=382908724 instance=ExtResource("4_wkftn")]
-position = Vector2(5.000016, -606)
+[node name="Mur8" parent="." unique_id=1915403054 instance=ExtResource("4_wkftn")]
+position = Vector2(393, 232)
+rotation = 1.5707964
+scale = Vector2(0.4, 1)
 
-[node name="Mur5" parent="Mur4" unique_id=1915403054 instance=ExtResource("4_wkftn")]
-position = Vector2(-455, -4)
+[node name="Mur6" parent="." unique_id=1667424612 instance=ExtResource("4_wkftn")]
+position = Vector2(774, 232.00002)
+rotation = 1.5707964
+scale = Vector2(0.4, 1)
 
-[node name="Mur6" parent="Mur4" unique_id=1667424612 instance=ExtResource("4_wkftn")]
-position = Vector2(-455, -602)
+[node name="Mur7" parent="." unique_id=382908724 instance=ExtResource("4_wkftn")]
+position = Vector2(775, 405)
+rotation = 1.5707964
+scale = Vector2(0.4, 1)
+
+[node name="MagicCircule" parent="." unique_id=668809991 instance=ExtResource("5_q4iis")]
+show_behind_parent = true
+z_index = -6
+position = Vector2(583, 320.00003)
+scale = Vector2(1.9200025, 1.8399993)
+
+[node name="Salt2" parent="." unique_id=1985958020 instance=ExtResource("6_m3clv")]
+position = Vector2(1109, 29)
+
+[node name="Salt" parent="Salt2" unique_id=2046395884 instance=ExtResource("6_m3clv")]
+position = Vector2(-3, 590)
+
+[node name="Salt2" parent="Salt2" unique_id=1638076606 instance=ExtResource("6_m3clv")]
+position = Vector2(-1059, 8)
+
+[node name="Salt3" parent="Salt2" unique_id=771121908 instance=ExtResource("6_m3clv")]
+position = Vector2(-1059, 593)
+
+[node name="Door" parent="." unique_id=1112052005 instance=ExtResource("7_mxnmf")]
+top_level = true
+position = Vector2(585, 445)
+scale = Vector2(1.1999999, 1)
+
+[node name="Door2" parent="." unique_id=430345772 instance=ExtResource("7_mxnmf")]
+top_level = true
+position = Vector2(584, 192)
+scale = Vector2(1.1999999, 1)
+
+[node name="Door4" parent="." unique_id=1019050760 instance=ExtResource("7_mxnmf")]
+top_level = true
+position = Vector2(775, 318.00003)
+rotation = 1.5707964
+scale = Vector2(1.6799988, 1)
+
+[node name="Door5" parent="." unique_id=1723743035 instance=ExtResource("7_mxnmf")]
+top_level = true
+position = Vector2(393.00003, 320.00003)
+rotation = 1.5707964
+scale = Vector2(1.6799988, 1)
+
+[node name="Mur" parent="." unique_id=721560299 instance=ExtResource("4_wkftn")]
+top_level = true
+position = Vector2(689, 192)
+scale = Vector2(0.64, 1)
+
+[node name="Mur5" parent="." unique_id=270104948 instance=ExtResource("4_wkftn")]
+position = Vector2(480, 445)
+scale = Vector2(0.64, 1)
+
+[node name="Mur2" parent="." unique_id=1614026292 instance=ExtResource("4_wkftn")]
+position = Vector2(479, 192)
+scale = Vector2(0.64, 1)
+
+[node name="Mur3" parent="." unique_id=512088439 instance=ExtResource("4_wkftn")]
+position = Vector2(691, 445)
+scale = Vector2(0.64, 1)

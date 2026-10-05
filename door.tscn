@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b5srfc0cj8p3k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aluq5"]
+size = Vector2(48, 16)
+
+[node name="Door" type="Node2D" unique_id=1112052005]
+
+[node name="AreaDoor" type="Area2D" parent="." unique_id=772670433]
+
+[node name="CollisionDoor" type="CollisionShape2D" parent="AreaDoor" unique_id=1497895031]
+shape = SubResource("RectangleShape2D_aluq5")
+
+[node name="PolygonDoor" type="Polygon2D" parent="AreaDoor" unique_id=1338124994]
+color = Color(0.19, 0.19, 0.19, 1)
+polygon = PackedVector2Array(-24, -8, 24, -8, 24, 8, -24, 8)

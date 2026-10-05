@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cimj1owfoqhlt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aluq5"]
+size = Vector2(68, 55)
+
+[node name="Salt" type="Node2D" unique_id=1985958020]
+
+[node name="AreaSalt" type="Area2D" parent="." unique_id=564428299]
+
+[node name="CollisionSalt" type="CollisionShape2D" parent="AreaSalt" unique_id=1553939122]
+scale = Vector2(1.3600001, 1)
+shape = SubResource("RectangleShape2D_aluq5")
+
+[node name="PolygonSalt" type="Polygon2D" parent="AreaSalt" unique_id=2144925968]
+polygon = PackedVector2Array(-46, -27, 45, -28, 46, 27, -47, 27)

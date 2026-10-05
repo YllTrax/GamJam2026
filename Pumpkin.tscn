@@ -18,3 +18,5 @@ shape = SubResource("RectangleShape2D_aluq5")
 [node name="Pumpkin" type="Polygon2D" parent="PumpkinBodyLv1" unique_id=1245229499]
 color = Color(0.7845131, 0.42027736, 0.14271641, 1)
 polygon = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+
+[node name="Marker2D" type="Marker2D" parent="PumpkinBodyLv1" unique_id=554359095]
