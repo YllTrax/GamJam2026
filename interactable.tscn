@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://em77ik8fchwy"]
+
+[ext_resource type="Script" uid="uid://8n4061bc7tvx" path="res://Interactable.cs" id="1_mblcr"]
+[ext_resource type="Script" uid="uid://5h1b7dibr2o8" path="res://Range.cs" id="2_f8sn6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_clsig"]
+size = Vector2(55, 53)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f8sn6"]
+size = Vector2(87, 86)
+
+[node name="Interactable" type="Area2D" unique_id=1610252152 node_paths=PackedStringArray("polygone2D", "outline", "interactionRange")]
+script = ExtResource("1_mblcr")
+polygone2D = NodePath("Polygon2D")
+outline = NodePath("Range/OutlinePolygon")
+interactionRange = NodePath("Range")
+
+[node name="Interaction" type="CollisionShape2D" parent="." unique_id=1502578966]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_clsig")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1637625819]
+color = Color(0.60262954, 0.60154796, 0.8471251, 1)
+polygon = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+
+[node name="Range" type="Area2D" parent="." unique_id=2000673563 node_paths=PackedStringArray("interactable")]
+script = ExtResource("2_f8sn6")
+interactable = NodePath("..")
+
+[node name="Range d\'interaction" type="CollisionShape2D" parent="Range" unique_id=970461842]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_f8sn6")
+debug_color = Color(0.9734009, 0.06292378, 0.38868758, 0.41960785)
+
+[node name="OutlinePolygon" type="Polygon2D" parent="Range" unique_id=41223656]
+visible = false
+z_index = -36
+color = Color(0.9879665, 0.11371907, 0.5490642, 1)
+polygon = PackedVector2Array(32, -32, 32, 32, -32, 32, -32, -32)
